@@ -94,7 +94,7 @@ def make_graph(relation_str, utterances_num, relations_vocab):
 
     """discourse-aware r-gcn"""
     for rel in rel_list:
-      if rel[1] != "global" :
+      if rel[1] != "Global" :
         rels.append(relations_vocab[rel[1].strip()])
         a = rel[0]  # head
         b = rel[2]  # tail
