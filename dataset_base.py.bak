@@ -77,7 +77,6 @@ def _dynamic_dict(example, src_field, tgt_field):
 def make_graph(relation_str, utterances_num, relations_vocab):
 
     rel_list = relation_str.split("\t")
-    rel_list=rel_list[:-1]
     rel_list = [[int(rel.strip().split()[0]), rel.strip().split()[1], int(rel.strip().split()[2])] for rel in
                 rel_list]
 
